@@ -1,0 +1,430 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200520.210409.5798.0.001.json",
+    "dumpEventTime": "2020-05-20T21:04:09Z",
+    "dumpEventTimeStamp": "1589988849801",
+    "processId": 5798,
+    "threadId": null,
+    "cwd": "/home/yashwanth/Node JS apps/COVID-19-RI",
+    "commandLine": [
+      "/usr/bin/node",
+      "src/"
+    ],
+    "nodejsVersion": "v12.16.3",
+    "glibcVersionRuntime": "2.27",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.16.3",
+      "v8": "7.8.279.23-node.35",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.16.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1g",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.3.0-7648-generic",
+    "osVersion": "#41~1586790036~18.04~600aeb5-Ubuntu SMP Mon Apr 13 17:47:15 UTC ",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz",
+        "speed": 1999,
+        "user": 1240500,
+        "nice": 300,
+        "sys": 224500,
+        "idle": 12720500,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz",
+        "speed": 2000,
+        "user": 1157300,
+        "nice": 100,
+        "sys": 210800,
+        "idle": 14428700,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz",
+        "speed": 2000,
+        "user": 1281400,
+        "nice": 200,
+        "sys": 220200,
+        "idle": 12479600,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i3-6006U CPU @ 2.00GHz",
+        "speed": 1999,
+        "user": 1216800,
+        "nice": 200,
+        "sys": 218400,
+        "idle": 12086600,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "wlp2s0",
+        "internal": false,
+        "mac": "3c:a0:67:f0:df:71",
+        "address": "192.168.1.5",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wlp2s0",
+        "internal": false,
+        "mac": "3c:a0:67:f0:df:71",
+        "address": "fe80::1a48:d6a0:2f9c:5f64",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 3
+      }
+    ],
+    "host": "pop-os"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b46955",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000a09c8f",
+      "symbol": "node::OnFatalError(char const*, char const*) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b7d71e",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000b7da99",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d2a1f5",
+      "symbol": " [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d2a886",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d37105",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d37fb5",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d3aa6c",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationOrigin, v8::internal::AllocationAlignment) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x0000000000d0163b",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType, v8::internal::AllocationOrigin) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x000000000104300e",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [/usr/bin/node]"
+    },
+    {
+      "pc": "0x00000000013c5b79",
+      "symbol": " [/usr/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2179756032,
+    "totalCommittedMemory": 2175068144,
+    "usedMemory": 2114871336,
+    "availableMemory": 49487856,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33088,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 29360656,
+        "capacity": 16759296,
+        "used": 2128736,
+        "available": 14630560
+      },
+      "old_space": {
+        "memorySize": 2067668992,
+        "committedMemory": 2067600144,
+        "capacity": 2035384000,
+        "used": 2035345264,
+        "available": 38736
+      },
+      "code_space": {
+        "memorySize": 692224,
+        "committedMemory": 496192,
+        "capacity": 404256,
+        "used": 404256,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 1314816,
+        "committedMemory": 1314640,
+        "capacity": 801840,
+        "used": 801840,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 76214272,
+        "committedMemory": 76214272,
+        "capacity": 76155648,
+        "used": 76155648,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16759296,
+        "used": 0,
+        "available": 16759296
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 240.513,
+    "kernelCpuSeconds": 3.67162,
+    "cpuConsumptionPercent": 88.4728,
+    "maxRss": 2547814400,
+    "pageFaults": {
+      "IORequired": 20,
+      "IONotRequired": 860252
+    },
+    "fsActivity": {
+      "reads": 25168,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 133.64,
+    "kernelCpuSeconds": 1.97851,
+    "cpuConsumptionPercent": 49.137,
+    "fsActivity": {
+      "reads": 25168,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "GJS_DEBUG_TOPICS": "JS ERROR;JS LOG",
+    "LESSOPEN": "| /usr/bin/lesspipe %s",
+    "npm_package_dependencies_serve_favicon": "^2.5.0",
+    "npm_config_cache_lock_stale": "60000",
+    "npm_config_ham_it_up": "",
+    "npm_package_dependencies_feathers_mongoose": "^8.3.0",
+    "npm_config_legacy_bundling": "",
+    "npm_config_sign_git_tag": "",
+    "USER": "yashwanth",
+    "LANGUAGE": "en_US:en",
+    "LC_TIME": "en_US.UTF-8",
+    "npm_package_directories_test": "test/",
+    "npm_package_devDependencies_jest": "^25.5.2",
+    "npm_config_user_agent": "npm/6.14.4 node/v12.16.3 linux x64",
+    "npm_config_always_auth": "",
+    "TEXTDOMAIN": "im-config",
+    "XDG_SEAT": "seat0",
+    "npm_config_bin_links": "true",
+    "npm_config_key": "",
+    "SSH_AGENT_PID": "3372",
+    "XDG_SESSION_TYPE": "x11",
+    "GIT_ASKPASS": "/usr/share/code/resources/app/extensions/git/dist/askpass.sh",
+    "npm_package_devDependencies_nodemon": "^2.0.3",
+    "npm_config_allow_same_version": "",
+    "npm_config_description": "true",
+    "npm_config_fetch_retries": "2",
+    "npm_config_heading": "npm",
+    "npm_config_if_present": "",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_user": "",
+    "npm_node_execpath": "/usr/bin/node",
+    "SHLVL": "2",
+    "npm_config_prefer_online": "",
+    "npm_config_noproxy": "",
+    "CHROME_DESKTOP": "code-url-handler.desktop",
+    "QT4_IM_MODULE": "xim",
+    "HOME": "/home/yashwanth",
+    "npm_package_standard_env_0": "jest",
+    "npm_config_force": "",
+    "DESKTOP_SESSION": "pop",
+    "TERM_PROGRAM_VERSION": "1.45.1",
+    "npm_package_devDependencies_eslint_config_prettier": "^6.11.0",
+    "npm_config_only": "",
+    "npm_config_read_only": "",
+    "GIO_LAUNCHED_DESKTOP_FILE": "/usr/share/applications/code.desktop",
+    "npm_package_engines_node": "^12.0.0",
+    "npm_package_dependencies__feathersjs_authentication_local": "^4.5.4",
+    "npm_config_cache_min": "10",
+    "npm_config_init_license": "ISC",
+    "GNOME_SHELL_SESSION_MODE": "pop",
+    "GTK_MODULES": "gail:atk-bridge",
+    "VSCODE_GIT_ASKPASS_MAIN": "/usr/share/code/resources/app/extensions/git/dist/askpass-main.js",
+    "npm_config_editor": "vi",
+    "npm_config_rollback": "true",
+    "npm_config_tag_version_prefix": "v",
+    "LC_MONETARY": "en_US.UTF-8",
+    "VSCODE_GIT_ASKPASS_NODE": "/usr/share/code/code",
+    "npm_config_cache_max": "Infinity",
+    "npm_config_timing": "",
+    "npm_config_userconfig": "/home/yashwanth/.npmrc",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "npm_package_keywords_0": "feathers",
+    "npm_package_dependencies_compression": "^1.7.4",
+    "npm_config_engine_strict": "",
+    "npm_config_init_author_name": "",
+    "npm_config_init_author_url": "",
+    "npm_config_preid": "",
+    "npm_config_tmp": "/tmp",
+    "COLORTERM": "truecolor",
+    "GIO_LAUNCHED_DESKTOP_FILE_PID": "3840",
+    "npm_package_description": ">",
+    "npm_config_depth": "Infinity",
+    "npm_config_package_lock_only": "",
+    "npm_config_save_dev": "",
+    "npm_config_usage": "",
+    "npm_package_homepage": "",
+    "npm_package_readmeFilename": "README.md",
+    "npm_config_metrics_registry": "https://registry.npmjs.org/",
+    "npm_config_cafile": "",
+    "npm_config_otp": "",
+    "npm_config_package_lock": "true",
+    "npm_config_progress": "true",
+    "npm_config_https_proxy": "",
+    "npm_config_save_prod": "",
+    "MANDATORY_PATH": "/usr/share/gconf/pop.mandatory.path",
+    "IM_CONFIG_PHASE": "2",
+    "npm_package_scripts_dev": "nodemon src/",
+    "npm_package_dependencies__feathersjs_authentication": "^4.5.3",
+    "npm_config_audit": "true",
+    "npm_config_cidr": "",
+    "npm_config_onload_script": "",
+    "npm_config_sso_type": "oauth",
+    "LOGNAME": "yashwanth",
+    "GTK_IM_MODULE": "ibus",
+    "npm_config_rebuild_bundle": "true",
+    "npm_config_save_bundle": "",
+    "npm_config_shell": "/bin/bash",
+    "_": "/usr/bin/npm",
+    "npm_package_private": "true",
+    "npm_package_scripts_jest": "jest  --forceExit",
+    "npm_config_dry_run": "",
+    "npm_config_format_package_lock": "true",
+    "npm_config_prefix": "/usr",
+    "DEFAULTS_PATH": "/usr/share/gconf/pop.default.path",
+    "npm_package_scripts_lint": "eslint src/. test/. --config .eslintrc.json",
+    "npm_config_scope": "",
+    "npm_config_browser": "",
+    "npm_config_cache_lock_wait": "10000",
+    "npm_config_ignore_prepublish": "",
+    "npm_config_registry": "https://registry.npmjs.org/",
+    "npm_config_save_optional": "",
+    "npm_config_searchopts": "",
+    "npm_config_versions": "",
+    "USERNAME": "yashwanth",
+    "XDG_SESSION_ID": "2",
+    "TERM": "xterm-256color",
+    "npm_config_cache": "/home/yashwanth/.npm",
+    "npm_config_proxy": "",
+    "npm_config_send_metrics": "",
+    "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+    "npm_package_scripts_start": "node src/",
+    "npm_config_global_style": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_version": "",
+    "WINDOWPATH": "2",
+    "npm_config_local_address": "",
+    "npm_config_viewer": "man",
+    "npm_config_node_gyp": "/usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js",
+    "PATH": "/usr/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/home/yashwanth/Node JS apps/COVID-19-RI/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+    "PAPERSIZE": "letter",
+    "SESSION_MANAGER": "local/pop-os:@/tmp/.ICE-unix/3289,unix/pop-os:/tmp/.ICE-unix/3289",
+    "npm_package_name": "covid-19-ri",
+    "npm_package_directories_lib": "src",
+    "npm_config_audit_level": "low",
+    "npm_config_prefer_offline": "",
+    "NODE": "/usr/bin/node",
+    "XDG_MENU_PREFIX": "gnome-",
+    "LC_ADDRESS": "en_US.UTF-8",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "npm_config_color": "true",
+    "npm_config_sign_git_commit": "",
+    "DISPLAY": ":0",
+    "npm_package_dependencies__feathersjs_feathers": "^4.5.3",
+    "npm_package_dependencies__feathersjs_transport_commons": "^4.5.3",
+    "npm_config_fetch_retry_mintimeout": "10000",
+    "npm_config_maxsockets": "50",
+    "npm_config_offline": "",
+    "npm_config_sso_poll_frequency": "500",
+    "LANG": "en_US.UTF-8",
+    "XDG_CURRENT_DESKTOP": "Unity",
+    "LC_TELEPHONE": "en_US.UTF-8",
+    "npm_package_dependencies_winston": "^3.2.1",
+    "npm_package_devDependencies_eslint": "^6.8.0",
+    "npm_config_umask": "0002",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
